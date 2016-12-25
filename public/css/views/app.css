@@ -1,0 +1,19 @@
+/* 21.11.16 16:42 v0.1 */
+body {
+  background-color: #eee;
+}
+
+@font-face {
+  font-family: "Times New Roman Ext Ro";
+  src: "public/times_extro.ttf" format("truetype");
+}
+
+#cyrTextPanel {
+  font-family: "Times New Roman Ext Ro", sans-serif;
+  font-size: 18px;
+ 
+}
+
+#latTextPanel {
+ 
+}

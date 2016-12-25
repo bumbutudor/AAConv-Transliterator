@@ -1,0 +1,2 @@
+"use strict";console.log("Hello from `/public/js/views/index.js`");
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9wdWJsaWMvanMvdmlld3MvaW5kZXguanMiXSwibmFtZXMiOlsiY29uc29sZSIsImxvZyJdLCJtYXBwaW5ncyI6IllBQUFBLFNBQVFDLElBQUkiLCJmaWxlIjoidmlld3MvaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zb2xlLmxvZygnSGVsbG8gZnJvbSBgL3B1YmxpYy9qcy92aWV3cy9pbmRleC5qc2AnKVxuIl19

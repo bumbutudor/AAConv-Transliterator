@@ -1,0 +1,45 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.navbar-header{
+    padding-top: 5px;
+    padding-left: 13px;
+
+}
+.container{
+    width: 100%;
+    padding: 0px;
+}
+
+.col-sm-6{
+    padding-left:0px; 
+    padding-right:0px;
+    height: inherit;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+}
+
+footer {
+    bottom: 0px;
+    position: fixed;
+}
+
+textarea{
+    width: 100%;
+    height: inherit;
+    font-size: 20px;
+    resize:none;
+    margin: 0px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .row.content {height:auto;} 
+}
