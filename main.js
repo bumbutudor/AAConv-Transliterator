@@ -61,13 +61,26 @@ function loadfile(input) {
     });
 }
 
-$("#btn-save").click(function () {
+$("#btn-save-txt").click(function () {
     var text = $("#latTextPanel").val();
     text.replace('\n', '\n\r');
     var blob = new Blob([text], {type: "text/plain;charset=utf-8"});
     saveAs(blob,  "Translated.txt");
 });
 
+$("#btn-save-doc").click(function () {
+    var text = $("#latTextPanel").val();
+    text.replace('\n', '\n\r');
+    var blob = new Blob([text], {type: "doc;charset=utf-8"});
+    saveAs(blob,  "Translated.doc");
+});
+
+$("#btn-save-rtf").click(function () {
+    var text = $("#latTextPanel").val();
+    text.replace('\n', '\n\r');
+    var blob = new Blob([text], {type: "rtf;charset=utf-8"});
+    saveAs(blob,  "Translated.rtf");
+});
 
 function ClearFields() {
     document.getElementById("cyrTextPanel").value = "";

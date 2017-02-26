@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="public/css/views/bootstrap.min.css">
         <script type="text/javascript" src="public/js/jquery.min.js"></script>
         <script type="text/javascript" src="public/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="public/js/FileSaver.min.js"></script> 
+        <script type="text/javascript" src="public/js/FileSaver.min.js"></script>
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
@@ -21,7 +21,7 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>                        
+                        <span class="icon-bar"></span>
                     </button>
                     <a href="index.html"><img src="public/logo/AAConv5.png" alt="AAConv5"></a>
                 </div>
@@ -42,20 +42,27 @@
                                 <label class="btn btn-default btn-file">
                                     <span class="glyphicon glyphicon-upload"></span>Upload File<input type="file" style="display: none;"  onchange="loadfile(this)">
                                 </label></a></li>
-                        <li><a href="#"> <button id="btn-save" class="btn btn-default" type="submit" >
-                                    <span class="glyphicon glyphicon-download"></span>Download Latin Text</button></a></li>
+                        <li class="dropdown1"><button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                          <span class="glyphicon glyphicon-download"></span>Download Latin Text</button>
+                          <ul class="dropdown-menu">
+                            <li>&nbsp<button class="btn btn-default" id="btn-save-txt" type="submit">.txt</button>
+                                <button class="btn btn-default" id="btn-save-doc" type="submit">.doc</button>
+                                <button class="btn btn-default" id="btn-save-rtf" type="submit">.rtf</button>
+                            </li>
+                          </ul>
+                       </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <div class="container">    
+        <div class="container">
             <div class="row" style="margin:0px; height:880px">
                 <div class="col-sm-6">
                     <textarea name="cyrillic" id="cyrTextPanel" placeholder="Introduceti text chirilic aici..." onselect="lookup();"></textarea>
 
                 </div>
-                <div class="col-sm-6"> 
+                <div class="col-sm-6">
                     <textarea name="latin" id="latTextPanel" disabled placeholder="Aici va fi rezultatul"></textarea>
                 </div>
             </div>
@@ -68,14 +75,14 @@
 
 
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-        <script type="text/javascript" src="public/js/FileSaver.min.js"></script> 
+        <script type="text/javascript" src="public/js/FileSaver.min.js"></script>
 
         <script src="main.js"></script>
-        <!-- 
+        <!--
             Document   : index.html
             Modified   : 23.12.16 20:24 v1.9
             Author     : Richard Strauss
             Design     : Tudor Bumbu
-        -->    
+        -->
     </body>
 </html>
